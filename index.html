@@ -1,1 +1,45 @@
-No file
+<div id="loaderpack">
+  <meta charset="UTF-8">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel="stylesheet" href="./loaderpack_style.css">
+
+
+<!-- partial:index.partial.html -->
+
+<div id="particles-background" class="vertical-centered-box"></div>
+<div id="particles-foreground" class="vertical-centered-box"></div>
+
+<div class="vertical-centered-box">
+  <div class="content">
+    <div class="loader-circle" id="spunnde"></div>
+    
+    <div class="loader-line-mask" id="spunnde1">
+      <div class="loader-line" id="spunnde2"></div>
+    </div>
+    <img width="70px" src="https://raw.githubusercontent.com/Flare-Development/cdn/master/blr-q.png"></img>
+   
+  </div>
+</div>
+<!-- partial -->
+  <script  src="./loaderpack_script.js"></script>
+</div>
+<script>
+  setInterval(function() {
+      var div = document.querySelector("#counter");
+      var count = div.textContent * 1 - 1;
+      div.textContent = count;
+      if (count <= 0) {
+        window.location.replace("http://hunterdonpilates.com/");
+
+      }
+  }, 1000);
+  
+</script>
+
+<div class="container"  id="counter">4</div>
+<style>
+  #counter {
+    display: none;
+  }
+</style>
